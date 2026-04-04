@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "firstname": "Wilder",
+    "lastname": "Outman",
+    "email": "wilderoutman@gmail.com",
+    "password": "PASS123",
+    "profilePic": "https://cdn.pixabay.com/photo/2019/08/11/18/59/avatar-4399701_960_720.png",
+    "name": "PublicSafety ",
+    "age": "22",
+    "gender": "Male",
+    "city": "Fairview",
+    "height": "6'2",
+    "bio": "I like hockey",
+    "genres": [
+      "Rap",
+      "Jazz",
+      "Country"
+    ]
+  }
+]
