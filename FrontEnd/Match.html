@@ -131,6 +131,66 @@
 header {
   position: relative;
 }
+    #song-list {
+      max-width: 500px;
+      margin: 2rem auto; /* The 'auto' centers the block horizontally */
+      padding: 2rem;
+      display: none; /* Hidden by default until button is clicked */
+    }
+
+    /* When the card has content, we show it */
+    #song-list.card {
+      display: block;
+    }
+
+    .playlist-card ol {
+      color: #333;
+      font-family: inherit;
+    }
+
+    .playlist-card li::marker {
+      color: #ff6f91;
+      font-weight: bold;
+    }
+    .btn-playlist {
+      font-family: "Playwrite US Modern", cursive;
+      background-color: #ff6f91; /* Matches the profile border color */
+      color: white;
+      border: none;
+      padding: 18px 40px;
+      font-size: 1.2rem;
+      border-radius: 50px; /* Pill shape */
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(255, 111, 145, 0.3);
+      transition: all 0.3s ease;
+      margin: 20px auto;
+      display: inline-block;
+      border: 2px solid transparent;
+    }
+
+    .btn-playlist:hover {
+        background-color: white;
+        color: #ff6f91;
+        border: 2px solid #ff6f91;
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-playlist:active {
+      transform: translateY(1px);
+    }
+
+    /* Style for the "Bad Match" message to match the button's footprint */
+    .bad-match-msg {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 15px;
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -171,6 +231,11 @@ header {
 
 </div>
 
+<div id="playlist-container" style="text-align: center; margin-top: 20px;">
+    </div>
+
+<div id="song-list" style="max-width: 600px; margin: 20px auto; color: white;">
+    </div>
 
 <footer>
   
