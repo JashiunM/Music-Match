@@ -1,20 +1,20 @@
 [
   {
-    "firstname": "wilder",
-    "lastname": "outman",
-    "email": "wilderoutman@gmail.com",
-    "password": "PASS123",
-    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Alex",
-    "name": "Woutman",
-    "age": "22",
-    "gender": "Male",
-    "city": "Fairview",
-    "height": "6'2",
-    "bio": "i like hockey",
+    "firstname": "Kaden",
+    "lastname": "Brandon",
+    "email": "brandon.kaden@gmail.com",
+    "password": "1234",
+    "profilePic": "https://cdn.pixabay.com/photo/2019/08/11/18/59/avatar-4399701_960_720.png",
+    "name": "Kaden",
+    "age": "25",
+    "gender": "Female",
+    "city": "Allen",
+    "height": "5'7",
+    "bio": "I love drinking coffee",
     "genres": [
       "Rap",
-      "Country",
-      "Rock"
+      "Pop",
+      "EDM"
     ]
   }
 ]
