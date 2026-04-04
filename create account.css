@@ -4,11 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    font-family: "Playwrite US Modern", cursive;
+
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Playwrite US Modern", cursive;
   background: linear-gradient(135deg, #ff9a9e, #ff99cc);
   display: flex;
   flex-direction: column;

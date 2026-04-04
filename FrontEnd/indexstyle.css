@@ -1,6 +1,8 @@
 /* reset + base */
 * {
   box-sizing: border-box;
+  font-family: "Playwrite US Modern", cursive;
+
 }
 
 body {
