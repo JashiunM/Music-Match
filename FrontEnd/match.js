@@ -138,5 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     loadCurrentUserCard(); // LEFT CARD
-    loadMatch();           // RIGHT CARD
+    loadMatch(); 
+    
+    // RIGHT CARD
 });

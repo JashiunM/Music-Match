@@ -92,18 +92,62 @@
       margin-top: 2rem;
       opacity: 0.8;
     }
+.top-buttons {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+#backBtn, #nextBtn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#backBtn {
+  background: #ddd;
+}
+
+#backBtn:hover {
+  background: #bbb;
+}
+
+#nextBtn {
+  background: linear-gradient(135deg, #ff6a88, #ff99ac);
+  color: white;
+}
+
+#nextBtn:hover {
+  transform: scale(1.05);
+}
+
+header {
+  position: relative;
+}
   </style>
 </head>
 <body>
 
 <header>
+  <br>
+  <br>
   <h1>💖 Your Music Match 💖</h1><br>
   <div class="match-section">
     <h2 id="match-percent">Match Score: --</h2>
     <p id="match-message"></p>
   </div>
 </header>
-
+<div class="top-buttons">
+  <button id="backBtn">⬅ Go Back</button>
+  <button id="nextBtn">💖 Find Next Match</button>
+</div>
 <div class="container">
 
   <div class="card">

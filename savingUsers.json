@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "firstname": "Jashiun",
+    "lastname": "Mcking",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "1234",
+    "profilePic": "https://cdn.pixabay.com/photo/2019/08/11/18/59/avatar-4399701_960_720.png",
+    "name": "wefewfe",
+    "age": "32",
+    "gender": "Male",
+    "city": "refer",
+    "height": "443",
+    "bio": "erferfer",
+    "genres": [
+      "Country",
+      "Pop",
+      "Rock"
+    ]
+  },
+  {
+    "firstname": "mcmcmc",
+    "lastname": "mcm",
+    "email": "scscscfes@gmail.com",
+    "password": "kjasbdjas",
+    "profilePic": "https://cdn.pixabay.com/photo/2019/08/11/18/59/avatar-4399701_960_720.png",
+    "name": "adwsdw",
+    "age": "18",
+    "gender": "Non-binary",
+    "city": "wefdwaef",
+    "height": "94'",
+    "bio": "wefesfc",
+    "genres": [
+      "Rock",
+      "EDM",
+      "Pop"
+    ]
+  },
+  {
+    "firstname": "alkjcnlasnk ",
+    "lastname": "sljc sl vc",
+    "email": "jbcnsjd@gmail.com",
+    "password": "oubeceb",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Jack",
+    "name": "dsvcszdv sd",
+    "age": "12",
+    "gender": "Non-binary",
+    "city": "srveveses",
+    "height": "9'1",
+    "bio": "dscdseces",
+    "genres": [
+      "Rock",
+      "Rap",
+      "EDM"
+    ]
+  },
+  {
+    "firstname": "fdvrds",
+    "lastname": "dscsdefc",
+    "email": "scsd@gmail.com",
+    "password": "ewfcew",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=mark",
+    "name": "ewfcw",
+    "age": "12",
+    "gender": "Male",
+    "city": "32edf",
+    "height": "324e",
+    "bio": "dscrer",
+    "genres": [
+      "EDM",
+      "Country",
+      "Pop"
+    ]
+  },
+  {
+    "firstname": "khsb cjdsb",
+    "lastname": "scsdjkbc",
+    "email": "scbsjdk@gmail.com",
+    "password": "sfk",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=mark",
+    "name": "lwjfnlwenk",
+    "age": "67",
+    "gender": "Female",
+    "city": "frdwfcre",
+    "height": "233",
+    "bio": "fdergver",
+    "genres": [
+      "Rap",
+      "Jazz",
+      "Country"
+    ]
+  },
+  {
+    "firstname": "jgvvhhv",
+    "lastname": "fdffr",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "fdrv"
+  },
+  {
+    "firstname": "wefweafew",
+    "lastname": "fweaf",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "wdfaew"
+  },
+  {
+    "firstname": "djbaewofcb",
+    "lastname": "ewfjewbkf",
+    "email": "jkbefkj@gmail",
+    "password": "kshbcfkhsd",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Jack",
+    "name": "feswfce",
+    "age": "34",
+    "gender": "Male",
+    "city": "srveveses",
+    "height": "34",
+    "bio": "vrf",
+    "genres": [
+      "Jazz",
+      "Pop",
+      "Rock"
+    ]
+  }
+]
