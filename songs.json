@@ -1,0 +1,57 @@
+{
+  "Rock": [
+    { "title": "Bohemian Rhapsody", "artist": "Queen" },
+    { "title": "Stairway to Heaven", "artist": "Led Zeppelin"},
+    { "title": "Smells Like Teen Spirit", "artist": "Nirvana" },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  },
+    { "title": "Bohemian Rhapsody", "artist": "Queen"  }
+  ],
+  "Rap": [
+    { "title": "Lose Yourself", "artist": "Eminem" },
+    { "title": "SICKO MODE", "artist": "Travis Scott" },
+    { "title": "God's Plan", "artist": "Drake" }
+  ],
+  "Pop": [
+    { "title": "Anti-Hero", "artist": "Taylor Swift" },
+    { "title": "As It Was", "artist": "Harry Styles" },
+    { "title": "Blinding Lights", "artist": "The Weeknd" }
+  ],
+  "Country": [
+    { "title": "Anti-Hero", "artist": "Taylor Swift" },
+    { "title": "As It Was", "artist": "Harry Styles" },
+    { "title": "Blinding Lights", "artist": "The Weeknd" }
+  ],
+  "Jazz": [
+    { "title": "Anti-Hero", "artist": "Taylor Swift" },
+    { "title": "As It Was", "artist": "Harry Styles" },
+    { "title": "Blinding Lights", "artist": "The Weeknd" }
+  ],
+  "EDM": [
+    { "title": "Anti-Hero", "artist": "Taylor Swift" },
+    { "title": "As It Was", "artist": "Harry Styles" },
+    { "title": "Blinding Lights", "artist": "The Weeknd" }
+  ]
+}
