@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "firstname": "Wilder",
+    "lastname": "Outman",
+    "email": "wilderoutman@gmail.com",
+    "password": "password123"
+  },
+  {
+    "firstname": "TEST",
+    "lastname": "TESTING",
+    "email": "test@gmail.com",
+    "password": "test123"
+  },
+  {
+    "firstname": "TESTING",
+    "lastname": "TESTING",
+    "email": "TESTING@gmail.com",
+    "password": "fakepass"
+  },
+  {
+    "firstname": "Melissa",
+    "lastname": "Outman",
+    "email": "melisoutman@hotmail.com",
+    "password": "passpass"
+  }
+]
