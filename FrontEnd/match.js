@@ -80,7 +80,7 @@ async function generateMatch() {
         };
 
         localStorage.setItem("musicMatchUser", JSON.stringify(matchData));
-        window.location.href = "FrontEnd/match.html";
+        window.location.href = "match.html";
 
     } catch (error) {
         console.error("Error generating match:", error);
@@ -201,11 +201,29 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM loaded");
 
     const startButton = document.getElementById("start-button");
-
     if (startButton) {
         startButton.addEventListener("click", generateMatch);
     }
 
+    // 2. "Go Back" button (Match Page)
+    const backBtn = document.getElementById("backBtn");
+    if (backBtn) {
+        backBtn.addEventListener("click", () => {
+            // This takes you back to the home page
+            // Adjust the path if home.html is in a different folder
+            window.location.href = "home.html"; 
+        });
+    }
+
+    // 3. "Find Next Match" button (Match Page)
+    const nextBtn = document.getElementById("nextBtn");
+    if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+            // We just call the existing generateMatch function!
+            generateMatch();
+        });
+    }
+    
     loadCurrentUserCard(); // LEFT CARD
     loadMatch();           // RIGHT CARD
 });
