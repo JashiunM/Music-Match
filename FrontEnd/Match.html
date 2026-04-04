@@ -92,6 +92,27 @@
       margin-top: 2rem;
       opacity: 0.8;
     }
+    #song-list {
+      max-width: 500px;
+      margin: 2rem auto; /* The 'auto' centers the block horizontally */
+      padding: 2rem;
+      display: none; /* Hidden by default until button is clicked */
+    }
+
+    /* When the card has content, we show it */
+    #song-list.card {
+      display: block;
+    }
+
+    .playlist-card ol {
+      color: #333;
+      font-family: inherit;
+    }
+
+    .playlist-card li::marker {
+      color: #ff6f91;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -127,6 +148,11 @@
 
 </div>
 
+<div id="playlist-container" style="text-align: center; margin-top: 20px;">
+    </div>
+
+<div id="song-list" style="max-width: 600px; margin: 20px auto; color: white;">
+    </div>
 
 <footer>
   
