@@ -16,3 +16,6 @@ document.getElementById("Login_Button").onclick = function(){
     console.log(testUser.password)
 }
 
+document.getElementById("Create_Button").onclick = function(){
+    window.location.href = "create account.html"
+}
