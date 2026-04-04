@@ -1,6 +1,6 @@
 [
   {
-    "firstname": "Wilder ",
+    "firstname": "Wilder",
     "lastname": "Outman",
     "email": "wilderoutman@gmail.com",
     "password": "123",
@@ -8,47 +8,47 @@
     "name": "Wilder",
     "age": "22",
     "gender": "Male",
-    "city": "Fairview",
-    "height": "6'2",
-    "bio": "hockey",
-    "genres": [
-      "Rap",
-      "Pop",
-      "Jazz"
-    ]
-  },
-  {
-    "firstname": "BOB",
-    "lastname": "xxx",
-    "email": "bob@gmail.com",
-    "password": "122323",
-    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=mark",
-    "name": "BOBBY",
-    "age": "23",
-    "gender": "Female",
     "city": "xxx",
     "height": "xxx",
-    "bio": "xxxx",
+    "bio": "xxx",
     "genres": [
       "Rap",
-      "Pop",
+      "Rock",
       "EDM"
     ]
   },
   {
-    "firstname": "test",
-    "lastname": "xxx",
+    "firstname": "testing",
+    "lastname": "test",
     "email": "test@gmail.com",
-    "password": "122323",
-    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Jack",
+    "password": "123",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=mark",
     "name": "test",
-    "age": "23",
-    "gender": "Non-binary",
-    "city": "test",
-    "height": "test",
-    "bio": "test",
+    "age": "22",
+    "gender": "Male",
+    "city": "xxx",
+    "height": "xxx",
+    "bio": "xxx",
     "genres": [
-      "Pop",
+      "Rock",
+      "Jazz",
+      "Rap"
+    ]
+  },
+  {
+    "firstname": "bob",
+    "lastname": "bob",
+    "email": "bob@gmail.com",
+    "password": "123",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Case",
+    "name": "BOB",
+    "age": "22",
+    "gender": "Male",
+    "city": "xxx",
+    "height": "xxx",
+    "bio": "xxx",
+    "genres": [
+      "Jazz",
       "EDM",
       "Country"
     ]
