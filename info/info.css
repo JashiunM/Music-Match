@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(135deg, #ffc1e3, #ff99cc);
+  background: linear-gradient(135deg, #ff9a9e, #ff99cc);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@ body {
 }
 
 .header h1 {
-  color: #ff3399;
+  color: white;
   font-size: 36px;
   margin-bottom: 20px;
   text-align: center;
