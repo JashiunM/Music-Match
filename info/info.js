@@ -63,6 +63,8 @@ genre2.addEventListener("change", updateDropdowns);
 // ---------- Submit Form ----------
 form.addEventListener("submit", function(e) {
   e.preventDefault();
+
+  // 1. Gather all the data from the inputs
   const data = {
     profilePic: picPreview.src,
     name: document.getElementById("name").value,
@@ -77,6 +79,33 @@ form.addEventListener("submit", function(e) {
       genre3.value
     ]
   };
-  console.log(data);
-  result.textContent = "Profile created!";
+
+  try {
+    // 2. Send the data to the server's new '/save-profile' route
+    const response = await fetch('/save-profile', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      // 3. Success! Show a message and move to the home page
+      result.textContent = "Profile created successfully!";
+      result.style.color = "green";
+      
+      // Wait 1 second so they can see the success message, then redirect
+      setTimeout(() => {
+        window.location.href = "/home";
+      }, 1000);
+      
+    } else {
+      result.textContent = "Error saving profile. Please try again.";
+      result.style.color = "red";
+    }
+  } catch (error) {
+    console.error("Fetch error:", error);
+    result.textContent = "Server connection failed.";
+  }
 });

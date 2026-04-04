@@ -8,11 +8,15 @@
 }
 
 body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #ff99cc);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  min-height: 90vh;
+  margin: 0;
+  padding: 20px;
 }
 
 .form {
@@ -117,7 +121,7 @@ body {
   z-index: 9;
 }
 
-.sumbit {
+.submit {
     border: none;
     outline: none;
     background: #ff6f91;
@@ -133,3 +137,36 @@ body {
   background: #ff85a0;
   transform: translateY(-2px);
 }
+
+/* Base label styling */
+label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+label input {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+/* Base label styling */
+label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+label input {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
