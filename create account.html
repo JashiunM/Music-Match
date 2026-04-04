@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="create account.css">
     <title>Music Match login</title>
 </head>
 
@@ -24,6 +26,7 @@
                 <input type="text" name ="lastname" required>
                 <span>Lastname</span>
             </label>
+        </div>
             <label>
                 <input type="text" name ="email" required>
                 <span>Email</span>
@@ -43,9 +46,13 @@
                     <i class="far fa-eye-slash"></i>
                 </span>
             </label>
-            <button type="submit" class="submit">Submit</button>
-            <a href="/login">Sign-in</a>>
-        </div>
+            <button class="sumbit">Submit</button>
+            <p class="signin">
+                Already have an account?
+                <a href="#" id="sign-in">sign-in</a>
+                
+            </p>
+        
 
 
         <script src="index.js" defer></script>
