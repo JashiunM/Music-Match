@@ -2,28 +2,84 @@ console.log("match.js loaded");
 
 const fakeMatches = [
     {
-        name: "Ava",
+        name: "Noah",
+        age: "25",
+        city: "Houston",
+        bio: "live music and road trips",
+        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=t",
+        genres: ["Rock", "EDM", "Rap", "Pop", "Jazz"]
+    },
+    {
+        name: "Emma",
+        age: "23",
+        city: "San Antonio",
+        bio: "dancing and good vibes only",
+        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=Emma",
+        genres: ["Pop", "EDM", "Latin", "Rap", "Jazz"]
+    },
+    {
+        name: "Elijah",
+        age: "26",
+        city: "Fort Worth",
+        bio: "chill nights and vinyl records",
+        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=car",
+        genres: ["Jazz", "Blues", "Rock", "Country", "Pop"]
+    },
+    {
+        name: "Olivia",
         age: "22",
-        city: "Dallas",
-        bio: "love concerts and late night drives",
-        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=Ava",
-        genres: ["Rap", "Pop", "EDM", "Jazz", "Country"]
+        city: "Irving",
+        bio: "concert hopper and foodie",
+        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=olivy",
+        genres: ["Pop", "Rap", "EDM", "Indie", "Country"]
     },
     {
-        name: "Liam",
-        age: "24",
-        city: "Plano",
-        bio: "gym, music, food",
-        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=Liam",
-        genres: ["Rock", "Country", "Rap", "EDM", "Pop"]
+        name: "James",
+        age: "27",
+        city: "Arlington",
+        bio: "music festivals are my thing",
+        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=w",
+        genres: ["EDM", "Rap", "Rock", "Pop", "Country"]
     },
     {
-        name: "Sophia",
+        name: "Isabella",
         age: "21",
-        city: "Austin",
-        bio: "coffee and playlists all day",
-        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=Sophia",
-        genres: ["Pop", "Jazz", "EDM", "Country", "Rap"]
+        city: "Frisco",
+        bio: "late night playlists hit different",
+        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=Isabe",
+        genres: ["Pop", "R&B", "Jazz", "EDM", "Rap"]
+    },
+    {
+        name: "Benjamin",
+        age: "28",
+        city: "McKinney",
+        bio: "old school beats and chill",
+        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=ben",
+        genres: ["Hip-Hop", "Jazz", "Soul", "R&B", "Blues"]
+    },
+    {
+        name: "Mia",
+        age: "24",
+        city: "Garland",
+        bio: "music is my therapy",
+        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=miay",
+        genres: ["Pop", "Indie", "EDM", "Rock", "Jazz"]
+    },
+    {
+        name: "Lucas",
+        age: "23",
+        city: "Denton",
+        bio: "guitar, coffee, repeat",
+        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=Lucas",
+        genres: ["Rock", "Indie", "Blues", "Country", "Jazz"]
+    },
+    {
+        name: "Charlotte",
+        age: "22",
+        city: "Waco",
+        bio: "singing in the car always",
+        img: "https://api.dicebear.com/7.x/adventurer/svg?seed=Charlotte",
+        genres: ["Pop", "Country", "EDM", "Rap", "Indie"]
     }
 ];
 
