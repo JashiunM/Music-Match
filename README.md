@@ -1,2 +1,2 @@
-# Music-Mash
+# Music-Match
 Hackathon
