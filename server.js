@@ -10,6 +10,12 @@ app.use('/Assets', express.static(path.join(__dirname, 'FrontEnd', 'Assets')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Add this near your other app.get routes
+app.get('/home', (req, res) => {
+    // Points to the FrontEnd folder specifically
+    res.sendFile(path.join(__dirname, 'FrontEnd', 'home.html'));
+});
+
 // --- CHANGE 2: Keep the blue page as the Home Page ---
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html')); 
@@ -43,6 +49,37 @@ app.post('/register', (req, res) => {
         });
     });
 });
+
+// --- NEW CODE STARTS HERE: The Login Check ---
+app.post('/login-check', (req, res) => {
+    const { email, password } = req.body;
+
+    fs.readFile('savingUsers.json', 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).send("Server Error");
+        }
+
+        const users = JSON.parse(data);
+
+        // This searches the JSON array for a user with the matching email AND password
+        const foundUser = users.find(u => u.email === email && u.password === password);
+
+        if (foundUser) {
+            //if login successful redirect them to 
+            res.redirect('/home');
+        } else {
+            // If not, tell them it's wrong
+            res.send(`
+                <script>
+                    alert("Incorrect email or password. Please try again.");
+                    window.location.href = "/"; // This sends them back to the login page
+                </script>
+            `);
+        }
+    });
+});
+// --- NEW CODE ENDS HERE ---
 
 app.listen(3000, () => {
     console.log('Server running at http://localhost:3000');

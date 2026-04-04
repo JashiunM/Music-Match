@@ -2,7 +2,7 @@
 body {
   margin: 0;
   background: #031a4d;
-  color: rgba(239, 206, 206, 0.792);
+  color: rgb(255, 255, 255);
   font-family: Arial;
 
   display: flex;
@@ -64,5 +64,5 @@ body {
   font-size: 12px;
 }
 img {
-  width: 25px;
+  width: 55px;
 }
