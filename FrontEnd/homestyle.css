@@ -2,12 +2,14 @@
 body {
   margin: 0;
   background: #031a4d;
-  color: rgba(239, 206, 206, 0.792);
+  color: rgb(255, 255, 255);
   font-family: Arial;
 }
 
 img {
   width: 25px;
+  background: none;
+
 }
 header {
   background: #3462c5;
@@ -24,4 +26,62 @@ header {
 .user {
     font-size: 18px;
 
+}
+
+/* MAIN LAYOUT */
+.layout {
+  display: flex;
+  height: calc(100vh - 80px); /* full height minus header */
+}
+
+/* LEFT COLUMN */
+.left {
+  width: 75px;
+  background: #05215f;
+  padding: 20px;
+}
+
+/* CENTER */
+.center {
+  flex: 1;
+  padding: 20px;
+  background: #89bff6;
+  align-items: center;
+
+}
+
+/* RIGHT COLUMN */
+.right {
+  width: 75px;
+  background: #05215f;
+  padding: 20px;
+}
+
+.start-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #1db954; /* Spotify green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+  text-align: center;
+}
+
+.start-button {
+  margin-top: 45px;
+  padding: 45px 60px;
+  font-size: 35px;
+  background: #d300a9;
+  border: none;
+  border-radius: 45px;
+  color: white;
+  cursor: pointer;
 }
