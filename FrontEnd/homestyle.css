@@ -1,0 +1,27 @@
+/* reset + base */
+body {
+  margin: 0;
+  background: #031a4d;
+  color: rgba(239, 206, 206, 0.792);
+  font-family: Arial;
+}
+
+img {
+  width: 25px;
+}
+header {
+  background: #3462c5;
+  display: flex;
+  justify-content: space-between; /* pushes left & right */
+  align-items: center;
+  padding: 20px;
+}
+
+.logo, .user {
+  margin: 0;
+}
+
+.user {
+    font-size: 18px;
+
+}
