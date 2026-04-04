@@ -161,13 +161,7 @@ function loadMatch() {
         const message = document.createElement("p");
             message.textContent = "💔 Bad Match: Not enough shared genres for a playlist.";
             
-            // Adding styles so it looks nice in the container
-            message.style.color = "white";
-            message.style.background = "rgba(0, 0, 0, 0.2)";
-            message.style.display = "inline-block";
-            message.style.padding = "10px 20px";
-            message.style.borderRadius = "15px";
-            message.style.fontSize = "1.1rem";
+            message.className = "bad-match-msg";
 
             playlistContainer.appendChild(message);
     }
