@@ -19,3 +19,7 @@ document.getElementById("Login_Button").onclick = function(){
 document.getElementById("Create_Button").onclick = function(){
     window.location.href = "create account.html"
 }
+
+document.getElementById("sign-in").onclick = function(){
+    window.location.href = "index.html"
+}
