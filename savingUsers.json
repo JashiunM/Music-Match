@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "firstname": "wilder",
+    "lastname": "outman",
+    "email": "wilderoutman@gmail.com",
+    "password": "PASS123",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Alex",
+    "name": "Woutman",
+    "age": "22",
+    "gender": "Male",
+    "city": "Fairview",
+    "height": "6'2",
+    "bio": "i like hockey",
+    "genres": [
+      "Rap",
+      "Country",
+      "Rock"
+    ]
+  }
+]
