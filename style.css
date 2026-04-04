@@ -1,0 +1,203 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Main content layout */
+.main-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Form styles */
+#profileForm {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 500px;
+}
+
+#profileForm h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #667eea;
+  font-size: 1.8rem;
+}
+
+.form-section {
+  margin-bottom: 25px;
+}
+
+.form-section h3 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  background: white;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+select {
+  background: white;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+.music-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Matches section */
+.matches-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 500px;
+}
+
+.matches-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #667eea;
+  font-size: 1.8rem;
+}
+
+.matches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.match-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-left: 4px solid #667eea;
+  transition: transform 0.2s ease;
+}
+
+.match-card:hover {
+  transform: translateY(-2px);
+}
+
+.match-card h3 {
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.match-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.match-percentage {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  #profileForm, .matches-section {
+    max-width: 100%;
+  }
+}
