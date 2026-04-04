@@ -3,8 +3,8 @@
     "firstname": "Wilder",
     "lastname": "Outman",
     "email": "wilderoutman@gmail.com",
-    "password": "12345",
-    "profilePic": "https://cdn.pixabay.com/photo/2019/08/11/18/59/avatar-4399701_960_720.png",
+    "password": "PASS123",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Alex",
     "name": "Wilder Outman",
     "age": "22",
     "gender": "Male",
@@ -14,23 +14,41 @@
     "genres": [
       "Rap",
       "Rock",
-      "Country"
+      "Pop"
     ]
   },
   {
     "firstname": "bot",
-    "lastname": "Account",
+    "lastname": "account",
     "email": "botaccount@gmail.com",
-    "password": "123",
-    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Jack",
+    "password": "12345",
+    "profilePic": "https://cdn.pixabay.com/photo/2019/08/11/18/59/avatar-4399701_960_720.png",
     "name": "bot account",
-    "age": "20",
+    "age": "25",
     "gender": "Female",
     "city": "Allen",
     "height": "5'10",
-    "bio": "I like to play soccer",
+    "bio": "i like to play soccer",
     "genres": [
+      "Country",
       "Rap",
+      "Rock"
+    ]
+  },
+  {
+    "firstname": "Fake",
+    "lastname": "Super",
+    "email": "superfake@gmail.com",
+    "password": "123",
+    "profilePic": "https://cdn.pixabay.com/photo/2019/08/11/18/59/avatar-4399701_960_720.png",
+    "name": "SuperFake",
+    "age": "21",
+    "gender": "Non-binary",
+    "city": "nowhere",
+    "height": "5'7",
+    "bio": "I dont like anything",
+    "genres": [
+      "Pop",
       "Jazz",
       "EDM"
     ]

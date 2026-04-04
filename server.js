@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const app = express();
+let currentUser = null; // This will act as our "Session"
 
 // --- CHANGE 1: Move these lines below the 'const app' line ---
 app.use(express.static(__dirname)); 
@@ -12,6 +13,24 @@ app.use(express.json());
 
 app.use('/info', express.static(path.join(__dirname, 'info')));
 
+app.get('/potential-matches', (req, res) => {
+    fs.readFile('savingUsers.json', 'utf8', (err, data) => {
+        if (err) return res.status(500).send("Error reading users");
+        const allUsers = JSON.parse(data);
+        
+        // We'll assume your session/logic knows who is logged in.
+        // For now, let's just send the whole list and filter on the frontend.
+        res.json(allUsers);
+    });
+});
+
+app.get('/current-user', (req, res) => {
+    if (currentUser) {
+        res.json(currentUser);
+    } else {
+        res.status(404).send("No one is logged in");
+    }
+});
 
 app.get('/info-page', (req, res) => {
     // This points to the 'info' folder and then the 'info.html' file
@@ -53,6 +72,7 @@ app.post('/register', (req, res) => {
         // 3. Write the updated list back to the file
         fs.writeFile('savingUsers.json', JSON.stringify(users, null, 2), (err) => {
             if (err) return res.status(500).send("Error saving user");
+            currentUser = newUser;
             res.redirect('/info-page');
         });
     });
@@ -75,6 +95,7 @@ app.post('/login-check', (req, res) => {
 
         if (foundUser) {
             //if login successful redirect them to 
+            currentUser = foundUser;
             res.redirect('/home');
         } else {
             // If not, tell them it's wrong
@@ -91,29 +112,28 @@ app.post('/login-check', (req, res) => {
 
 app.post('/save-profile', (req, res) => {
     const profileData = req.body;
-
     fs.readFile('savingUsers.json', 'utf8', (err, data) => {
         if (err) return res.status(500).send("Error reading file");
-
         let users = JSON.parse(data);
 
-        // We assume the user to update is the very last one added to the list
-        if (users.length > 0) {
-            let lastIndex = users.length - 1;
-            
-            // Merge the existing account data with the new profile data
-            users[lastIndex] = { ...users[lastIndex], ...profileData };
+        // Find the index of the person who is actually logged in
+        const index = users.findIndex(u => u.email === currentUser.email);
+
+        if (index !== -1) {
+            // Update both the list and our active session variable
+            users[index] = { ...users[index], ...profileData };
+            currentUser = users[index]; 
 
             fs.writeFile('savingUsers.json', JSON.stringify(users, null, 2), (err) => {
                 if (err) return res.status(500).send("Error saving data");
-                res.sendStatus(200); // Success!
+                res.sendStatus(200);
             });
         } else {
-            res.status(400).send("No user found");
+            res.status(400).send("User session not found");
         }
     });
 });
-
+/*
 app.get("/current-user", (req, res) => {
     fs.readFile("savingUsers.json", "utf8", (err, data) => {
         if (err) {
@@ -149,7 +169,7 @@ app.get("/current-user", (req, res) => {
         }
     });
 });
-
+*/
 
 app.listen(3000, () => {
     console.log('Server running at http://localhost:3000');
