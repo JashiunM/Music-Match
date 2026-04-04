@@ -117,7 +117,7 @@ body {
   z-index: 9;
 }
 
-.sumbit {
+.submit {
     border: none;
     outline: none;
     background: #ff6f91;
@@ -133,3 +133,36 @@ body {
   background: #ff85a0;
   transform: translateY(-2px);
 }
+
+/* Base label styling */
+label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+label input {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+/* Base label styling */
+label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+label input {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
