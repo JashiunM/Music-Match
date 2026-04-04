@@ -7,7 +7,7 @@ body {
 }
 
 img {
-  width: 25px;
+  width: 60px;
   background: none;
 
 }
@@ -16,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between; /* pushes left & right */
   align-items: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 .logo, .user {
@@ -80,6 +80,18 @@ header {
   padding: 45px 60px;
   font-size: 35px;
   background: #d300a9;
+  border: none;
+  border-radius: 45px;
+  color: white;
+  cursor: pointer;
+}
+
+.user-button {
+
+  margin-top: 15px;
+  padding: 15px;
+  font-size: 15px;
+  background: #2f2f2f;
   border: none;
   border-radius: 45px;
   color: white;
