@@ -164,7 +164,8 @@ async function loadCurrentUserCard() {
         const city = document.getElementById("user-city");
         const bio = document.getElementById("user-bio");
         const genres = document.getElementById("user-genres");
-
+        const topIcon = document.getElementById("profile-icon");
+        if (topIcon) topIcon.src = user.profilePic;
         if (img) img.src = user.profilePic;
         if (name) name.textContent = user.name;
         if (age) age.textContent = "Age: " + user.age;
