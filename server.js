@@ -114,6 +114,43 @@ app.post('/save-profile', (req, res) => {
     });
 });
 
+app.get("/current-user", (req, res) => {
+    fs.readFile("savingUsers.json", "utf8", (err, data) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).json({ error: "Could not read user file" });
+        }
+
+        try {
+            const users = JSON.parse(data);
+
+            if (!users.length) {
+                return res.status(404).json({ error: "No user found" });
+            }
+
+            const user = users[0];
+
+            res.json({
+                firstname: user.firstname,
+                lastname: user.lastname,
+                name: user.name,
+                email: user.email,
+                profilePic: user.profilePic,
+                age: user.age,
+                gender: user.gender,
+                city: user.city,
+                height: user.height,
+                bio: user.bio,
+                genres: user.genres
+            });
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({ error: "Invalid JSON" });
+        }
+    });
+});
+
+
 app.listen(3000, () => {
     console.log('Server running at http://localhost:3000');
 });

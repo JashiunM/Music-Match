@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "firstname": "Kaden",
+    "lastname": "Brandon",
+    "email": "brandon.kaden@gmail.com",
+    "password": "1234",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Taylor",
+    "name": "Kaden",
+    "age": "61",
+    "gender": "Male",
+    "city": "Allen",
+    "height": "6'7",
+    "bio": "i goated fr",
+    "genres": [
+      "Rap",
+      "Country",
+      "EDM"
+    ]
+  }
+]
