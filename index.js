@@ -17,5 +17,5 @@ document.getElementById("Login_Button").onclick = function(){
 }
 
 document.getElementById("Create_Button").onclick = function(){
-    window.location.href = "create account.html"
+    window.location.href = "/register-page"
 }
