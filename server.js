@@ -44,6 +44,32 @@ app.post('/register', (req, res) => {
     });
 });
 
+// --- NEW CODE STARTS HERE: The Login Check ---
+app.post('/login-check', (req, res) => {
+    const { email, password } = req.body;
+
+    fs.readFile('savingUsers.json', 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).send("Server Error");
+        }
+
+        const users = JSON.parse(data);
+
+        // This searches the JSON array for a user with the matching email AND password
+        const foundUser = users.find(u => u.email === email && u.password === password);
+
+        if (foundUser) {
+            // If we found them, say hello!
+            res.send(`<h1>Welcome back, ${foundUser.firstname}!</h1><a href="/">Go Home</a>`);
+        } else {
+            // If not, tell them it's wrong
+            res.send("<h1>Incorrect email or password.</h1><a href='/'>Try again</a>");
+        }
+    });
+});
+// --- NEW CODE ENDS HERE ---
+
 app.listen(3000, () => {
     console.log('Server running at http://localhost:3000');
 });

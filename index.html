@@ -12,17 +12,17 @@
 
 <body>
 
-  <h1 class="logo"> <img src="FrontEnd/Assets/Final-Logo.png" alt="Logo"> Music Match </h1>
+  <h1 class="logo"> <img src="FrontEnd/Assets/music-note-png.webp" alt="Logo"> Music Match </h1>
 
   <div class="login-container">
     <h2>Login</h2>
+      <form action="/login-check" method="POST">
+        <input id="Email_Input" name="email" type="email" placeholder="Email" class="input">
+        <input id= "Password_Input" name="password" type="password" placeholder="Password" class="input">
 
-    <input id="Email_Input" type="email" placeholder="Email" class="input">
-    <input id= "Password_Input"type="password" placeholder="Password" class="input">
-
-    <button id = "Login_Button" class="btn login-btn">Login</button>
-    <button id = "Create_Button" class="btn create-btn">Create Account</button>
-
+        <button id = "Login_Button" type="submit" class="btn login-btn">Login</button>
+        <button id = "Create_Button" type="button" class="btn create-btn">Create Account</button>
+      </form>
   </div>
 
 
