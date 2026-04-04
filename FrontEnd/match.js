@@ -1,5 +1,6 @@
 console.log("match.js loaded");
 
+/*
 const fakeMatches = [
     {
         name: "Noah",
@@ -82,6 +83,7 @@ const fakeMatches = [
         genres: ["Pop", "Country", "EDM", "Rap", "Indie"]
     }
 ];
+*/
 
 function getRandomGenres(genresArray, count = 3) {
     const shuffled = [...genresArray].sort(() => 0.5 - Math.random());
@@ -108,49 +110,52 @@ async function generateMatch() {
     try {
         console.log("generateMatch started");
 
+        // 1. Get the Current User
         const currentUser = await getCurrentUser();
-        console.log("currentUser.genres =", currentUser.genres);
 
-        if (!currentUser || !currentUser.genres || !Array.isArray(currentUser.genres)) {
-            throw new Error("Current user genres missing or invalid");
+        // 2. Fetch ALL real users from the server
+        const response = await fetch("/potential-matches");
+        const allUsers = await response.json();
+
+        // 3. Filter out the current user so they don't match with themselves
+        const potentialMatches = allUsers.filter(user => user.email !== currentUser.email);
+
+        // 4. Check if anyone else exists
+        if (potentialMatches.length === 0) {
+            alert("No other users found! Try again once more people join.");
+            return;
         }
 
-        const randomIndex = Math.floor(Math.random() * fakeMatches.length);
-        const randomMatch = fakeMatches[randomIndex];
-        console.log("randomMatch =", randomMatch);
+        // 5. Pick a random REAL user
+        const randomIndex = Math.floor(Math.random() * potentialMatches.length);
+        const randomMatch = potentialMatches[randomIndex];
 
-        if (!randomMatch.genres || !Array.isArray(randomMatch.genres)) {
-            throw new Error("Fake match genres missing");
-        }
-
-        const selectedGenres = getRandomGenres(randomMatch.genres, 3);
-        console.log("selectedGenres =", selectedGenres);
-
+        // 6. Compare genres (Using the logic you already wrote)
+        // Note: Real users have a 'genres' array from your info.html
         const commonGenres = currentUser.genres.filter(genre =>
-            selectedGenres.includes(genre)
+            randomMatch.genres.includes(genre)
         );
-        console.log("commonGenres =", commonGenres);
 
         const matchData = {
             name: randomMatch.name,
             age: randomMatch.age,
             city: randomMatch.city,
             bio: randomMatch.bio,
-            img: randomMatch.img,
-            genres: selectedGenres,
+            img: randomMatch.profilePic || "https://api.dicebear.com/7.x/adventurer/svg?seed=default", 
+            genres: randomMatch.genres,
             commonGenres: commonGenres,
-            matchPercent: Math.floor((commonGenres.length / 3) * 100)
+            matchPercent: Math.floor((commonGenres.length / currentUser.genres.length) * 100)
         };
 
-        console.log("Saving matchData:", matchData);
         localStorage.setItem("musicMatchUser", JSON.stringify(matchData));
-
         window.location.href = "FrontEnd/match.html";
+
     } catch (error) {
         console.error("Error generating match:", error);
         alert("Could not generate match.");
     }
 }
+
 async function loadCurrentUserCard() {
     try {
         const response = await fetch("/current-user");
