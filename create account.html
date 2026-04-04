@@ -12,27 +12,27 @@
 
 <body>
     
-<form autocomplete="off" class="form">
+<form autocomplete="off" class="form" action="/register" method="POST">
     <p class="title">Register</p>
     <p class="message">Signup now and get full 
         access to our app.</p>
         <div class="form-group">
             <label>
-                <input type="text" required>
+                <input type="text" name ="firstname" required>
                 <span>Firstname</span>
             </label>
 
             <label>
-                <input type="text" required>
+                <input type="text" name ="lastname" required>
                 <span>Lastname</span>
             </label>
         </div>
             <label>
-                <input type="text" required>
+                <input type="text" name ="email" required>
                 <span>Email</span>
             </label>
             <label>
-                <input type="text" required>
+                <input type="text" name ="password" required>
                 <span>Password</span>
                 <span class="icon" id="togglePassword">
                     <i class="far fa-eye-slash"></i>
@@ -49,5 +49,6 @@
 
 
 
+        <script src="index.js" defer></script>
 </body>
 </html>
