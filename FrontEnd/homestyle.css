@@ -85,3 +85,15 @@ header {
   color: white;
   cursor: pointer;
 }
+
+.user-button {
+
+  margin-top: 15px;
+  padding: 15px;
+  font-size: 15px;
+  background: #2f2f2f;
+  border: none;
+  border-radius: 45px;
+  color: white;
+  cursor: pointer;
+}
