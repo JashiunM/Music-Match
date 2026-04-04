@@ -10,6 +10,14 @@ app.use('/Assets', express.static(path.join(__dirname, 'FrontEnd', 'Assets')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use('/info', express.static(path.join(__dirname, 'info')));
+
+
+app.get('/info-page', (req, res) => {
+    // This points to the 'info' folder and then the 'info.html' file
+    res.sendFile(path.join(__dirname, 'info', 'info.html'));
+});
+
 // Add this near your other app.get routes
 app.get('/home', (req, res) => {
     // Points to the FrontEnd folder specifically
@@ -45,7 +53,7 @@ app.post('/register', (req, res) => {
         // 3. Write the updated list back to the file
         fs.writeFile('savingUsers.json', JSON.stringify(users, null, 2), (err) => {
             if (err) return res.status(500).send("Error saving user");
-            res.send("<h1>Registration Successful!</h1><a href='/'>Go Back</a>");
+            res.redirect('/info-page');
         });
     });
 });
