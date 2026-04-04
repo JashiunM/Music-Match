@@ -5,48 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="create account.css">
-    <title>Music Match login</title>
+    <title>Music Match Register</title>
 </head>
-
-
-
 <body>
-    
-<form autocomplete="off" class="form" action="/register" method="POST">
-    <p class="title">Register</p>
-    <p class="message">Signup now and get full 
-        access to our app.</p>
+    <form autocomplete="off" class="form" action="/register" method="POST">
+        <p class="title">Register</p>
+        <p class="message">Sign up now and get full access to our app.</p>
+
         <div class="form-group">
             <label>
-                <input type="text" name ="firstname" required>
+                <input type="text" name="firstname" required>
                 <span>Firstname</span>
             </label>
 
             <label>
-                <input type="text" name ="lastname" required>
+                <input type="text" name="lastname" required>
                 <span>Lastname</span>
             </label>
         </div>
-            <label>
-                <input type="text" name ="email" required>
-                <span>Email</span>
-            </label>
-            <label>
-                <input type="text" name ="password" required>
-                <span>Password</span>
-                <span class="icon" id="togglePassword">
-                    <i class="far fa-eye-slash"></i>
-                </span>
-            </label>
-            <button class="sumbit">Submit</button>
-            <p class="signin">
-                Already have an account?
-                <a href="#" id="sign-in">sign-in</a>
+
+        <label>
+            <input 
+                type="email" 
+                name="email" 
+                required 
                 
-            </p>
-        
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                oninvalid="this.setCustomValidity('Enter a valid email')"
+                oninput="this.setCustomValidity('')"
+            >
+            <span>Email</span>
+        </label>
 
+        <label>
+            <input type="password" name="password" required>
+            <span>Password</span>
+            <span class="icon" id="togglePassword">
+                <i class="far fa-eye-slash"></i>
+            </span>
+        </label>
 
-        <script src="index.js" defer></script>
+        <button class="submit">Submit</button>
+
+        <p class="signin">
+            Already have an account? 
+            <a href="/" id="sign-in">Sign in</a>
+        </p>
+    </form>
+
+    <script>
+        // Password toggle
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("input[name='password']");
+
+        togglePassword.addEventListener("click", () => {
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+
+            togglePassword.innerHTML = type === "password" 
+                ? '<i class="far fa-eye-slash"></i>' 
+                : '<i class="far fa-eye"></i>';
+        });
+    </script>
 </body>
 </html>
