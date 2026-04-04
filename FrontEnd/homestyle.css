@@ -7,7 +7,7 @@ body {
 }
 
 img {
-  width: 25px;
+  width: 60px;
   background: none;
 
 }
@@ -16,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between; /* pushes left & right */
   align-items: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 .logo, .user {
