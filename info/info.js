@@ -61,7 +61,7 @@ genre1.addEventListener("change", updateDropdowns);
 genre2.addEventListener("change", updateDropdowns);
 
 // ---------- Submit Form ----------
-form.addEventListener("submit", function(e) {
+form.addEventListener("submit", async function(e) {
   e.preventDefault();
 
   // 1. Gather all the data from the inputs
