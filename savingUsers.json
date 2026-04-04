@@ -34,5 +34,23 @@
       "Jazz",
       "EDM"
     ]
+  },
+  {
+    "firstname": "Kaden",
+    "lastname": "Brandon",
+    "email": "brandon.kaden@gmail.com",
+    "password": "1234",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Taylors",
+    "name": "Kaden",
+    "age": "123",
+    "gender": "Female",
+    "city": "asdawd",
+    "height": "5'3",
+    "bio": "ell",
+    "genres": [
+      "Rap",
+      "Jazz",
+      "EDM"
+    ]
   }
 ]
