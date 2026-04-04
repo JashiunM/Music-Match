@@ -1,110 +1,200 @@
-/* base */
+/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: "Playwrite US Modern", cursive;
   background: linear-gradient(135deg, #ff9a9e, #ff99cc);
-  color: white;
+  color: #333;
 }
 
-/* header */
+/* ===== HEADER ===== */
 header {
-  background: rgba(255, 240, 246, 0.9);
+  background: rgba(255, 240, 246, 0.95);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
-  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
-}
-
-/* Smiling heart image */
-.center img {
-    font-family: "Playwrite US Modern", cursive;
-    width: 300px;      /* Set this to whatever looks best for your layout */
-    height: auto;
-    display: block;    /* Puts it on its own line */
-    margin: 0 auto 20px auto; /* Centers it and adds space below */
+  padding: 15px 40px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 /* logo */
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-size: 26px;
   font-weight: 700;
   color: #d63384;
-  text-shadow: 1px 1px 5px rgba(255, 51, 153, 0.3);
-}
-.user-button img {
-  width: 40px;
-  border-radius: 50%;
-}
-.logo img {
-  width: 40px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(255, 51, 153, 0.3);
 }
 
-/* user button */
+.logo img {
+  width: 45px;
+  transition: transform 0.2s;
+}
+
+.logo img:hover {
+  transform: rotate(-10deg) scale(1.05);
+}
+
+/* profile button */
 .user-button {
-  padding: 7px 10px;
-  background: #fa55a7;
+  background: #ff3399;
   border: none;
-  border-radius: 12px;
-  color: white;
+  border-radius: 50px;
+  padding: 6px;
   cursor: pointer;
+  transition: 0.25s ease;
 }
 
 .user-button:hover {
   background: #ff1a75;
+  transform: scale(1.1);
 }
 
-/* MAIN LAYOUT */
+.user-button img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* ===== LAYOUT ===== */
 .layout {
   display: flex;
-  height: calc(100vh - 70px);
-  gap: 20px;
-  padding: 20px;
+  height: calc(100vh - 80px);
+  gap: 25px;
+  padding: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* LEFT + RIGHT PANELS */
+/* ===== SIDE PANELS ===== */
 .left, .right {
-  width: 125px;
-  background: #fff0f6;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.25);
+  width: 220px;
+  background: rgba(255, 240, 246, 0.95);
+  border-radius: 25px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
   color: #d63384;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
 
-/* CENTER */
+.left:hover, .right:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.left h2, .right h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid #ffd6e7;
+  padding-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+/* list items */
+.left h3, .right h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.left h3:hover, .right h3:hover {
+  transform: translateX(8px);
+  color: #ff1a75;
+}
+
+/* ===== CENTER CARD ===== */
 .center {
   flex: 1;
-  background: #fff0f6;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.25);
-
+  background: rgba(255, 240, 246, 0.97);
+  border-radius: 30px;
+  padding: 50px 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 25px;
+  text-align: center;
   color: #d63384;
+  position: relative;
+  overflow: hidden;
 }
 
-/* START BUTTON */
+/* heart image */
+.center img {
+  width: 240px;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.25s ease;
+}
+
+.center img:hover {
+  transform: scale(1.05);
+}
+
+/* subtle floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* tagline */
+.center h2 {
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 420px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+/* ===== BUTTON ===== */
 .start-button {
-  font-family: "Playwrite US Modern", cursive;
-  margin-top: 30px;
-  padding: 20px 40px;
-  font-size: 24px;
-  background: #ff3399;
+  margin-top: 10px;
+  padding: 18px 50px;
+  font-size: 21px;
+  background: linear-gradient(135deg, #ff3399, #ff1a75);
   border: none;
-  border-radius: 20px;
+  border-radius: 35px;
   color: white;
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(255, 51, 153, 0.3);
 }
 
 .start-button:hover {
-  background: #ff1a75;
-  transform: scale(1.05);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 14px 30px rgba(255, 51, 153, 0.4);
+}
+
+.start-button:active {
+  transform: scale(0.97);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  .layout {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .left, .right {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .center {
+    padding: 40px 30px;
+  }
 }
