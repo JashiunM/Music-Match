@@ -34,16 +34,18 @@ header {
   color: #d63384;
   text-shadow: 1px 1px 5px rgba(255, 51, 153, 0.3);
 }
-
+.user-button img {
+  width: 40px;
+  border-radius: 50%;
+}
 .logo img {
   width: 40px;
 }
 
 /* user button */
 .user-button {
-  padding: 10px 16px;
-  font-size: 14px;
-  background: #ff3399;
+  padding: 7px 10px;
+  background: #fa55a7;
   border: none;
   border-radius: 12px;
   color: white;
