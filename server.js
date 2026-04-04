@@ -10,6 +10,12 @@ app.use('/Assets', express.static(path.join(__dirname, 'FrontEnd', 'Assets')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Add this near your other app.get routes
+app.get('/home', (req, res) => {
+    // Points to the FrontEnd folder specifically
+    res.sendFile(path.join(__dirname, 'FrontEnd', 'home.html'));
+});
+
 // --- CHANGE 2: Keep the blue page as the Home Page ---
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html')); 
@@ -60,11 +66,16 @@ app.post('/login-check', (req, res) => {
         const foundUser = users.find(u => u.email === email && u.password === password);
 
         if (foundUser) {
-            // If we found them, say hello!
-            res.send(`<h1>Welcome back, ${foundUser.firstname}!</h1><a href="/">Go Home</a>`);
+            //if login successful redirect them to 
+            res.redirect('/home');
         } else {
             // If not, tell them it's wrong
-            res.send("<h1>Incorrect email or password.</h1><a href='/'>Try again</a>");
+            res.send(`
+                <script>
+                    alert("Incorrect email or password. Please try again.");
+                    window.location.href = "/"; // This sends them back to the login page
+                </script>
+            `);
         }
     });
 });
