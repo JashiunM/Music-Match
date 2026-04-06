@@ -58,17 +58,17 @@
     "lastname": "Mcking",
     "email": "jashiunmcking60@gmail.com",
     "password": "sefcesf",
-    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=mark",
-    "name": "22",
-    "age": "22",
-    "gender": "Female",
-    "city": "22",
-    "height": "22",
-    "bio": "22",
+    "profilePic": "https://cdn.pixabay.com/photo/2019/08/11/18/59/avatar-4399701_960_720.png",
+    "name": "11",
+    "age": "11",
+    "gender": "Male",
+    "city": "11",
+    "height": "11",
+    "bio": "11",
     "genres": [
       "Rock",
       "Jazz",
-      "Pop"
+      "EDM"
     ]
   },
   {
@@ -94,5 +94,11 @@
     "lastname": "Mcking",
     "email": "jashiunmcking60@gmail.com",
     "password": "12344"
+  },
+  {
+    "firstname": "Jashiun",
+    "lastname": "Mcking",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "101"
   }
 ]
