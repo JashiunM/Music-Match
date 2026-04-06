@@ -59,16 +59,16 @@
     "email": "jashiunmcking60@gmail.com",
     "password": "sefcesf",
     "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=mark",
-    "name": "Jashiun Mcking",
+    "name": "22",
     "age": "22",
-    "gender": "Male",
+    "gender": "Female",
     "city": "22",
     "height": "22",
     "bio": "22",
     "genres": [
-      "Rap",
-      "Pop",
-      "Jazz"
+      "Rock",
+      "Jazz",
+      "Pop"
     ]
   },
   {
@@ -88,5 +88,11 @@
     "lastname": "Mcking",
     "email": "jashiunmcking60@gmail.com",
     "password": "1234"
+  },
+  {
+    "firstname": "Jashiun",
+    "lastname": "Mcking",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "12344"
   }
 ]
