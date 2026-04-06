@@ -68,7 +68,23 @@
     "genres": [
       "Rap",
       "Pop",
+      "EDM"
+    "firstname": "Jashiun",
+    "lastname": "Mcking",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "sefcesf",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Taylors",
+    "name": "sef",
+    "age": "23",
+    "gender": "Male",
+    "city": "wfwef",
+    "height": "324",
+    "bio": "refver",
+    "genres": [
+      "Rap",
+      "Rock",
       "Jazz"
     ]
   }
 ]
+
