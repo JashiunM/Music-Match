@@ -112,7 +112,7 @@
     "gender": "Male",
     "city": "El dorado",
     "height": "5'11\"",
-    "bio": "232",
+    "bio": "3232",
     "genres": [
       "Rap",
       "Rock",
@@ -130,5 +130,11 @@
     "lastname": "Mcking",
     "email": "javiunm2006@gmail.com",
     "password": "1332"
+  },
+  {
+    "firstname": "Javiun",
+    "lastname": "Mcking",
+    "email": "javiunm2006@gmail.com",
+    "password": "q32"
   }
 ]
