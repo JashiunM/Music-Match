@@ -80,7 +80,7 @@ async function generateMatch() {
         };
 
         localStorage.setItem("musicMatchUser", JSON.stringify(matchData));
-        window.location.href = "match.html";
+        window.location.href = "/FrontEnd/Match.html";
 
     } catch (error) {
         console.error("Error generating match:", error);
@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
         backBtn.addEventListener("click", () => {
             // This takes you back to the home page
             // Adjust the path if home.html is in a different folder
-            window.location.href = "home.html"; 
+            window.location.href = "/FrontEnd/home.html"; 
         });
     }
 
