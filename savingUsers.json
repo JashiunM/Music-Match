@@ -1,0 +1,104 @@
+[
+  {
+    "firstname": "Wilder ",
+    "lastname": "Outman",
+    "email": "wilderoutman@gmail.com",
+    "password": "123",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Alex",
+    "name": "Wilder",
+    "age": "22",
+    "gender": "Male",
+    "city": "Fairview",
+    "height": "6'2",
+    "bio": "hockey",
+    "genres": [
+      "Rap",
+      "Pop",
+      "Jazz"
+    ]
+  },
+  {
+    "firstname": "BOB",
+    "lastname": "xxx",
+    "email": "bob@gmail.com",
+    "password": "122323",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=mark",
+    "name": "BOBBY",
+    "age": "23",
+    "gender": "Female",
+    "city": "xxx",
+    "height": "xxx",
+    "bio": "xxxx",
+    "genres": [
+      "Rap",
+      "Pop",
+      "EDM"
+    ]
+  },
+  {
+    "firstname": "test",
+    "lastname": "xxx",
+    "email": "test@gmail.com",
+    "password": "122323",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=Jack",
+    "name": "test",
+    "age": "23",
+    "gender": "Non-binary",
+    "city": "test",
+    "height": "test",
+    "bio": "test",
+    "genres": [
+      "Pop",
+      "EDM",
+      "Country"
+    ]
+  },
+  {
+    "firstname": "Jashiun",
+    "lastname": "Mcking",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "sefcesf",
+    "profilePic": "https://cdn.pixabay.com/photo/2019/08/11/18/59/avatar-4399701_960_720.png",
+    "name": "11",
+    "age": "11",
+    "gender": "Male",
+    "city": "11",
+    "height": "11",
+    "bio": "11",
+    "genres": [
+      "Rock",
+      "Jazz",
+      "EDM"
+    ]
+  },
+  {
+    "firstname": "Jashiun",
+    "lastname": "Mcking",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "1234"
+  },
+  {
+    "firstname": "Jashiun",
+    "lastname": "Mcking",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "12345"
+  },
+  {
+    "firstname": "Jashiun",
+    "lastname": "Mcking",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "1234"
+  },
+  {
+    "firstname": "Jashiun",
+    "lastname": "Mcking",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "12344"
+  },
+  {
+    "firstname": "Jashiun",
+    "lastname": "Mcking",
+    "email": "jashiunmcking60@gmail.com",
+    "password": "101"
+  }
+]
