@@ -100,5 +100,35 @@
     "lastname": "Mcking",
     "email": "jashiunmcking60@gmail.com",
     "password": "101"
+  },
+  {
+    "firstname": "Javiun",
+    "lastname": "Mcking",
+    "email": "javiunm2006@gmail.com",
+    "password": "2006",
+    "profilePic": "https://cdn.pixabay.com/photo/2019/08/11/18/59/avatar-4399701_960_720.png",
+    "name": "Javiun Mcking",
+    "age": "18",
+    "gender": "Male",
+    "city": "El dorado",
+    "height": "5'11\"",
+    "bio": "232",
+    "genres": [
+      "Rap",
+      "Rock",
+      "Country"
+    ]
+  },
+  {
+    "firstname": "Javiun",
+    "lastname": "Mcking",
+    "email": "javiunm2006@gmail.com",
+    "password": "32"
+  },
+  {
+    "firstname": "Javiun",
+    "lastname": "Mcking",
+    "email": "javiunm2006@gmail.com",
+    "password": "1332"
   }
 ]
