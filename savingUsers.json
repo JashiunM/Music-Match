@@ -52,5 +52,23 @@
       "EDM",
       "Country"
     ]
+  },
+  {
+    "firstname": "Javiun",
+    "lastname": "Mcking",
+    "email": "javiunm2006@gmail.com",
+    "password": "11323",
+    "profilePic": "https://api.dicebear.com/7.x/adventurer/svg?seed=mark",
+    "name": "Javiun Mcking",
+    "age": "18",
+    "gender": "Male",
+    "city": "El dorado",
+    "height": "5'11\"",
+    "bio": "i lvwebwjh",
+    "genres": [
+      "Rap",
+      "Pop",
+      "Jazz"
+    ]
   }
 ]
